@@ -1,13 +1,12 @@
 import React from 'react'
 import Navbar from './Navbar'
-
 export default function Faq() {
     return (
         <>
             <Navbar/>
             <div className="breadcrumbs" data-aos="fade-in">
                 <div className="container">
-                    <h2>Frequently Asked Questions</h2>
+                    <h2>Frequently Asked <strong>Questions</strong></h2>
                 </div>
             </div>
             {/* <!-- ======= Frequently Asked Questions Section ======= --> */}
@@ -91,3 +90,4 @@ export default function Faq() {
         </>
     )
 }
+

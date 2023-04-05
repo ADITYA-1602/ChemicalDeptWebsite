@@ -8,7 +8,7 @@ export default function Home() {
     return (
         <>
             <Navbar/>
-            <Carousel fade style={{marginTop:'85px'}} data-aos="fade-up">
+            <Carousel fade style={{marginTop:'85px'}} data-aos="fade-down">
                 <Carousel.Item interval={1000}>
                     <img
                     className="d-block w-100"
@@ -30,6 +30,14 @@ export default function Home() {
                     alt="Third slide"
                     />
                 </Carousel.Item>
+                {/* <Carousel.Item interval={1000}>
+                    <img
+                    className="d-block w-100"
+                    src={process.env.PUBLIC_URL + '/Images/HomeSlider/PosterForDepartmentalEvent.png'}
+                    alt="Second slide"
+                    style={{height:'550px'}}
+                    />
+                </Carousel.Item> */}
                 <Carousel.Item interval={1000}>
                     <img
                     className="d-block w-100"
@@ -157,7 +165,7 @@ export default function Home() {
                         <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
                             <div className="service-item">
                                 <div className="img">
-                                    <img src={process.env.PUBLIC_URL + '/Images/Research/services-1.jpg'} className="img-fluid" alt="ReactionEngineering"/>
+                                    <img src={process.env.PUBLIC_URL + '/Images/Research/ReactionLab.JPG'} className="img-fluid" alt="ReactionEngineering"/>
                                 </div>
                                 <div className="details position-relative">
                                     <div className="icon">
@@ -173,7 +181,7 @@ export default function Home() {
                         <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
                             <div className="service-item">
                                 <div className="img">
-                                    <img src={process.env.PUBLIC_URL + '/Images/Research/services-2.jpg'} className="img-fluid" alt="MassTransfer"/>
+                                    <img src={process.env.PUBLIC_URL + '/Images/Research/MassTransfer.JPG'} className="img-fluid" alt="MassTransfer"/>
                                 </div>
                                 <div className="details position-relative">
                                     <div className="icon">
@@ -205,7 +213,7 @@ export default function Home() {
                         <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
                             <div className="service-item">
                                 <div className="img">
-                                    <img src={process.env.PUBLIC_URL + '/Images/Research/services-4.jpg'} className="img-fluid" alt="ProcessControl"/>
+                                    <img src={process.env.PUBLIC_URL + '/Images/Research/Process control lab1.jpg'} className="img-fluid" alt="ProcessControl"/>
                                 </div>
                                 <div className="details position-relative">
                                     <div className="icon">
@@ -218,10 +226,10 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
+                        <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600" style={{marginLeft:'auto',marginRight:'auto'}}>
                             <div className="service-item">
                                 <div className="img">
-                                    <img src={process.env.PUBLIC_URL + '/Images/Research/services-5.jpg'} className="img-fluid" alt="HeatTransfer"/>
+                                    <img src={process.env.PUBLIC_URL + '/Images/Research/Heat Transfer lab.jpg'} className="img-fluid" alt="HeatTransfer"/>
                                 </div>
                                 <div className="details position-relative">
                                     <div className="icon">
@@ -234,10 +242,10 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
+                        <div className="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700" style={{marginLeft:'auto',marginRight:'auto'}}>
                             <div className="service-item">
                                 <div className="img">
-                                    <img src={process.env.PUBLIC_URL + '/Images/Research/services-6.jpg'} className="img-fluid" alt="FluidMechanics"/>
+                                    <img src={process.env.PUBLIC_URL + '/Images/Research/Fluid Mechanics lab.jpg'} className="img-fluid" alt="FluidMechanics"/>
                                 </div>
                                 <div className="details position-relative">
                                     <div className="icon">

@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom';
 export default function Navbar(){
     return(
         <>
-            {/* <div style={{ display: 'flex', alignItems: 'center' ,backgroundColor:'#dddddd'}}>
-                <img src={process.env.PUBLIC_URL + '/Images/IIT_logo.png'} alt="First Image" style={{ width: '15%', animation: 'pulse 2s infinite',marginLeft:'180px' }}  />
-                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                    <span style={{ margin: '0 20px', fontSize: '28px',color:'#543359',fontWeight:'bold' }}>DEPARTMENT OF CHEMICAL ENGINEERING</span>
-                    <span style={{ margin: '0 20px', fontSize: '28px' ,color:'#543359',fontWeight:'bold'}}>INDIAN INSTITUTE OF TECHNOLOGY JODHPUR</span>
-                </div>
-                <img src={process.env.PUBLIC_URL + '/Images/chem_logo.png'} style={{ width: '15%', animation: 'pulse 2s infinite' }} />
-            </div> */}
             {/* <!-- ======= Header ======= --> */}
-            <header id="header" className="header fixed-top" data-scrollto-offset="0" style={{ background: '#fafafa' }}>
+            <header id="header" className="header fixed-top" data-scrollto-offset="0" style={{ background: '#ffffff' }}>
+                {/* <div style={{ display: 'flex', alignItems: 'center' ,backgroundColor:'#ffffff'}}>
+                    <img src={process.env.PUBLIC_URL + '/Images/IIT_logo.png'} alt="First Image" style={{ marginTop:'10px', width: '4%', animation: 'pulse 2s infinite',marginLeft:'50px'}}  />
+                    <div style={{ display: 'flex', flexDirection: 'column' }}>
+                        <span style={{ margin: '10px 20px 0 20px', fontSize: '18px',color:'#737373',fontWeight:'bold' }}>IIT Jodhpur</span>
+                        {/* <span style={{ margin: '0 20px', fontSize: '15px' ,color:'#543359',fontWeight:'bold'}}>INDIAN INSTITUTE OF TECHNOLOGY JODHPUR</span> */}
+                    {/* </div> */}
+                    {/* <img src={process.env.PUBLIC_URL + '/Images/chem_logo.png'} style={{ width: '10%', animation: 'pulse 2s infinite' }} /> */}
+                {/* </div>} */}
                 <div className="container-fluid d-flex align-items-center justify-content-between">
                     <nav id="navbar" className="navbar">
                         <ul>
@@ -93,7 +93,7 @@ export default function Navbar(){
                             <li className="dropdown"><Link aria-current="page" to="#"><span style={{ fontWeight: 'bold' }}>Resources<i className="bi bi-chevron-down dropdown-indicator"></i></span></Link>
                                 <ul>
                                     <li><Link aria-current="page" to="/infoComp">Info for Companies</Link></li>
-                                    <li><Link aria-current="page" to="/corpBrochure">Corporate Connection Brochure</Link></li>
+                                    <li><Link aria-current="page" to="/corpBrochure">Corporate Relations</Link></li>
                                     <li><Link aria-current="page" to="/labSafety">Laboratory Safety</Link></li>
                                     <li><Link aria-current="page" to="/donate">Donate</Link></li>
                                 </ul>
