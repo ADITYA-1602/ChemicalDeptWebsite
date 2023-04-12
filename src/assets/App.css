@@ -508,6 +508,164 @@ section {
   font-size: 14px;
   color: #8a87b6;
 }
+/*--------------------------------------------------------------
+# On Focus Section
+--------------------------------------------------------------*/
+.onfocus {
+  padding: 0;
+}
+
+.onfocus .content {
+  background: linear-gradient(rgba(72, 86, 100, 0.1), rgba(72, 86, 100, 0.2)), center center;
+  background-size: cover;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+}
+
+@media (min-width: 768px) {
+  .onfocus .content {
+    padding: 80px;
+  }
+}
+
+.onfocus .content h3 {
+  font-weight: 600;
+  font-size: 32px;
+  color: var(--color-white);
+}
+
+.onfocus .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.onfocus .content ul li {
+  padding-bottom: 10px;
+  color:var(--color-white);
+}
+
+.onfocus .content ul a {
+  padding-bottom: 10px;
+  color:var(--color-white);
+}
+
+.onfocus .content ul a:hover {
+  padding-bottom: 10px;
+  text-decoration:underline;
+}
+
+.onfocus .content ul i {
+  font-size: 25px;
+  padding-right: 8px;
+  color: #0ea2bd;
+}
+
+.onfocus .content p:last-child {
+  margin-bottom: 0;
+}
+
+.onfocus .content .read-more {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding: 12px 24px;
+  border-radius: 5px;
+  transition: 0.3s;
+  display: -nline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  background: var(--color-primary);
+}
+
+.onfocus .content .read-more i {
+  font-size: 18px;
+  margin-left: 5px;
+  line-height: 0;
+  transition: 0.3s;
+}
+
+.onfocus .content .read-more:hover {
+  background: rgba(var(--color-primary-rgb), 0.9);
+  padding-right: 19px;
+}
+
+.onfocus .content .read-more:hover i {
+  margin-left: 10px;
+}
+
+@-webkit-keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+
+@keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+/* # Newsletter */
+--------------------------------------------------------------*/
+.newsletter {
+  padding: 0;
+}
+/* <img src={process.env.PUBLIC_URL + '/Images/Faculty/dheeraj_admin.jpeg'} className="img-fluid" alt=""/> */ chemical_web/public/Images/onfocus-content-bg.jpg chemical_web/src/assets/App.css chemical_web/src/assets/onfocus-content-bg.jpg
+.newsletter .content {
+  background: linear-gradient(rgba(72, 86, 100, 0.1), rgba(72, 86, 100, 0.2)), center center;
+  background-size: cover;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+}
+
+@media (min-width: 768px) {
+  .newsletter .content {
+    padding: 7px 80px 10px 80px;
+  }
+}
+.newsletter .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.newsletter .content ul li {
+  padding-bottom: 10px;
+  color:var(--color-secondary);
+}
+
+.newsletter .content ul a {
+  padding-bottom: 10px;
+  color:var(--color-secondary);
+}
+
+.newsletter .content ul a:hover {
+  padding-bottom: 10px;
+  color: #0ea2bd;
+  /* text-decoration:underline; */
+}
+
+.newsletter .content ul i {
+  font-size: 20px;
+  padding-right: 8px;
+  color: #0ea2bd;
+}
+
+.newsletter .content p:last-child {
+  margin-bottom: 0;
+}
 /* # Research Section */
 /* --------------------------------------------------------------*/ */
 .services .img {

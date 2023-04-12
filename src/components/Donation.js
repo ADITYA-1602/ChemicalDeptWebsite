@@ -28,17 +28,6 @@ export default function Donation() {
                     </div>
                 </div>
             </section>
-            {/* <div className="row gy-5">
-                <div className="col-xl-6 col-md-6" data-aos="zoom-in" data-aos-delay="400" style={{marginLeft:'auto',marginRight:'auto'}}>
-                <div className="content">
-                    <blockquote><p>The Chemical Engineering Department may rely on financial support from both individual and corporate partners to conduct its work in education, research, and community engagement.</p></blockquote>
-                    <blockquote><p>We are requesting your generosity in funding research and education. The department depends on the support of former students, businesses, and anybody else who wants to support the department's initiatives.</p></blockquote>
-                </div>
-                </div>
-                <div className="col-xl-6 col-md-5" data-aos="zoom-in" data-aos-delay="400" style={{marginLeft:'auto',marginRight:'auto'}}>
-                    <img src={process.env.PUBLIC_URL + '/Images/donate.png'} className="img-fluid" alt="Donations"/>
-                </div>
-            </div> */}
         </>
     )
 }

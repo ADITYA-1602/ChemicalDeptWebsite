@@ -44,6 +44,8 @@ import Guruswamy_talk from "./components/talks/Guruswamy_talk";
 import Yamuna_talk from "./components/talks/Yamuna_talk";
 import CorpRelation from "./components/CorpRelation";
 import Donation from "./components/Donation";
+import ResearchLabs from "./components/ResearchLabs";
+import Newsletter from "./components/Newsletter";
 function App() {
   return (
     <>
@@ -83,6 +85,8 @@ function App() {
             <Route exact path="/yamuna-talk" element={<Yamuna_talk/>}/>
             <Route exact path="/jhumpa-talk" element={<Jhumpa_talk/>}/>
             <Route exact path="/corpBrochure" element={<CorpRelation/>}/>
+            <Route exact path="/researchArea" element={<ResearchLabs/>}/>
+            <Route exact path="/newsLetter" element={<Newsletter/>}/>
             <Route exact path="/donate" element={<Donation/>}/>
             <Route exact path="/contact" element={<Contact/>}/>
             <Route exact path="/faq" element={<Faq/>}/>

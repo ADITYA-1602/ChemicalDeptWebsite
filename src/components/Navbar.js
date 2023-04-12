@@ -23,9 +23,6 @@ export default function Navbar(){
                                         <ul>
                                         <li><Link aria-current="page" to="/regularFaculty">Regular Faculty</Link></li>
                                         <li><Link aria-current="page" to="/scholarsResidence">Scholars-in-Residence</Link></li>
-                                        {/* <li><Link aria-current="page" to="/guestFaculty">Guest Faculty</Link></li> */}
-                                        {/* <li><Link aria-current="page" to="/adjunctFaculty">Adjunct Faculty</Link></li> */}
-                                        {/* <li><Link aria-current="page" to="/advisors">Advisors</Link></li> */}
                                         </ul>
                                     </li>
                                     <li class="dropdown"><Link aria-current="page" to="#"><span style={{ fontWeight: 'bold' }}>Staff</span> <i class="bi bi-chevron-down dropdown-indicator"></i></Link>
@@ -74,22 +71,10 @@ export default function Navbar(){
                             <li className="dropdown"><Link aria-current="page" to="#"><span style={{ fontWeight: 'bold' }}>News & Events<i className="bi bi-chevron-down dropdown-indicator"></i></span></Link>
                                 <ul>
                                     <li><Link aria-current="page" to="/webinars">Webinars</Link></li>
-                                    <li><Link aria-current="page" to="/newsLetter">Newsletter</Link></li>
+                                    <li><Link aria-current="page" to="/newsLetter">News & Newsletter</Link></li>
                                     <li><Link aria-current="page" to="/awards">Awards & Recognition</Link></li>
                                 </ul>
                             </li>
-                            {/* <li className="dropdown"><Link aria-current="page" to="#"><span style={{ fontWeight: 'bold' }}>Students<i className="bi bi-chevron-down dropdown-indicator"></i></span></Link>
-                                <ul>
-                                    <li class="dropdown"><Link aria-current="page" to="#"><span style={{ fontWeight: 'bold' }}>PhD Students</span> <i class="bi bi-chevron-down dropdown-indicator"></i></Link>
-                                        <ul>
-                                        <li><Link aria-current="page" to="/phDcurrent">Current Students</Link></li>
-                                        <li><Link aria-current="page" to="/phDgraduated">Graduated Students</Link></li>
-                                        </ul>
-                                    </li>
-                                    <li><Link aria-current="page" to="/placement">Placement Stats</Link></li>
-                                    <li><Link aria-current="page" to="/teams">Teams</Link></li>
-                                </ul>
-                            </li> */}
                             <li className="dropdown"><Link aria-current="page" to="#"><span style={{ fontWeight: 'bold' }}>Resources<i className="bi bi-chevron-down dropdown-indicator"></i></span></Link>
                                 <ul>
                                     <li><Link aria-current="page" to="/infoComp">Info for Companies</Link></li>
