@@ -1,8 +1,31 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import {message } from 'antd';
+import emailjs from '@emailjs/browser';
 
 export default function FooterComp() {
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs.sendForm('service_tshpbrb', 'template_u5iam6l', form.current, '_emESdC9xiudXx0RY')
+            .then((result) => {
+                success();
+                e.target.reset();
+            }, (error) => {
+            });
+    };
+    const [messageApi, contextHolder] = message.useMessage();
+    const success = () => {
+        messageApi
+            .open({
+            type: 'loading',
+            content: 'Action in progress..',
+            duration: 2.0,
+            })
+            .then(() => message.success('Thank you for Subscribing!', 2.5))
+    };
     return (
         <>
+            {contextHolder}
             <footer id="footer">
                 <div className="footer-top">
                     <div className="container">
@@ -42,9 +65,9 @@ export default function FooterComp() {
                             <div className="col-lg-4 col-md-6 footer-newsletter">
                                 <h4>Join Our Newsletter</h4>
                                 <p>Our Department publishes a quarterly newsletter.</p>
-                                <form action="" method="post">
-                                    <input type="email" name="email"/>
-                                    <input type="submit" value="Subscribe"/>
+                                <form ref={form} onSubmit={sendEmail}>
+                                    <input type="email" name="email" required/>
+                                    <input type="submit" value="Subscribe" onClick={success}/>
                                 </form>
                             </div>
                         </div>

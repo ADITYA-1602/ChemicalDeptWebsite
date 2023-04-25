@@ -15,72 +15,78 @@ export default function Faq() {
                     <ul className="faq-list">
                         <li data-aos="fade-up">
                             <a data-bs-toggle="collapse" className="collapsed" data-bs-target="#faq1">
-                                Non consectetur a erat nam at lectus urna duis? <i className="bx bx-chevron-down icon-show"></i>
+                            What is the eligibility criteria for admission to the Chemical Engineering program at IIT Jodhpur? <i className="bx bx-chevron-down icon-show"></i>
                                 <i className="bx bx-x icon-close"></i>
                             </a>
                             <div id="faq1" className="collapse" data-bs-parent=".faq-list">
                             <p>
-                                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.
-                                Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                            The eligibility criteria for admission to the Chemical Engineering program at IIT Jodhpur is a minimum of 75% marks in the 10+2 examination or equivalent with Physics, Chemistry, and Mathematics as core subjects. Additionally, candidates need to clear the Joint Entrance Examination (JEE) Main and Advanced with a good rank.
                             </p>
                             </div>
                         </li>
                         <li data-aos="fade-up" data-aos-delay="100">
                             <a data-bs-toggle="collapse" data-bs-target="#faq2" className="collapsed">
-                                Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i className="bx bx-chevron-down icon-show"></i>
+                            What is the selection process for the Chemical Engineering program at IIT Jodhpur? <i className="bx bx-chevron-down icon-show"></i>
                                 <i className="bx bx-x icon-close"></i>
                             </a>
                             <div id="faq2" className="collapse" data-bs-parent=".faq-list">
                             <p>
-                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec
-                                ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper
-                                dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                            The selection process for the Chemical Engineering program at IIT Jodhpur is based on the candidate's performance in the JEE Main and Advanced exams. Shortlisted candidates are then called for counseling and final admission is granted based on the candidate's rank, availability of seats, and other factors.
                             </p>
                             </div>
                         </li>
                         <li data-aos="fade-up" data-aos-delay="200">
                             <a data-bs-toggle="collapse" data-bs-target="#faq3" className="collapsed">
-                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i className="bx bx-chevron-down icon-show"></i>
+                            What are the research areas in the Chemical Engineering department at IIT Jodhpur? <i className="bx bx-chevron-down icon-show"></i>
                                 <i className="bx bx-x icon-close"></i>
                             </a>
                             <div id="faq3" className="collapse" data-bs-parent=".faq-list">
                             <p>
-                                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer
-                                enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna
-                                duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                            The research areas in the Chemical Engineering department at IIT Jodhpur include Nanotechnology, Catalysis, Renewable Energy, Process Intensification, and Polymer Science.
                             </p>
                             </div>
                         </li>
                         <li data-aos="fade-up" data-aos-delay="300">
                             <a data-bs-toggle="collapse" data-bs-target="#faq4" className="collapsed">
-                                Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i className="bx bx-chevron-down icon-show"></i>
+                            Can I pursue a master's degree in Chemical Engineering after completing my undergraduate program at IIT Jodhpur? <i className="bx bx-chevron-down icon-show"></i>
                                 <i className="bx bx-x icon-close"></i>
                             </a>
                             <div id="faq4" className="collapse" data-bs-parent=".faq-list">
                             <p>
-                                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                            Yes, after completing the undergraduate program in Chemical Engineering at IIT Jodhpur, students can pursue a master's degree in Chemical Engineering or related fields from the same institute or other top institutions in India or abroad.
+                            </p>
+                            </div>
+                        </li>
+                        <li data-aos="fade-up" data-aos-delay="200">
+                            <a data-bs-toggle="collapse" data-bs-target="#faq7" className="collapsed">
+                            What are the programs offered by the Department of Chemical Engineering at IIT Jodhpur? <i className="bx bx-chevron-down icon-show"></i>
+                                <i className="bx bx-x icon-close"></i>
+                            </a>
+                            <div id="faq7" className="collapse" data-bs-parent=".faq-list">
+                            <p>
+                            The Department of Chemical Engineering offers five degree programs as part of the undergraduate and postgraduate curriculum, namely: B.Tech in Chemical Engineering, B.Tech in Chemical Engineering with Specialization, M.Tech in Chemical Engineering, Dual Degree M.Tech-Ph.D in Chemical Engineering and Ph.D in Chemical Engineering.
                             </p>
                             </div>
                         </li>
                         <li data-aos="fade-up" data-aos-delay="400">
                             <a data-bs-toggle="collapse" data-bs-target="#faq5" className="collapsed">
-                                Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i className="bx bx-chevron-down icon-show"></i>
+                            Are there any internships or industrial training opportunities available for Chemical Engineering students at IIT Jodhpur? <i className="bx bx-chevron-down icon-show"></i>
                                 <i className="bx bx-x icon-close"></i>
                             </a>
                             <div id="faq5" className="collapse" data-bs-parent=".faq-list">
                             <p>
-                                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                            Yes, there are many internships and industrial training opportunities available for Chemical Engineering students at IIT Jodhpur. The department has tie-ups with many top companies, and students are encouraged to take up internships and training programs to gain practical experience.
                             </p>
                             </div>
                         </li>
                         <li data-aos="fade-up" data-aos-delay="500">
                             <a data-bs-toggle="collapse" data-bs-target="#faq6" className="collapsed">
-                                Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i className="bx bx-chevron-down icon-show"></i>
+                            Is there any provision for financial assistance or scholarships for Chemical Engineering students at IIT Jodhpur? <i className="bx bx-chevron-down icon-show"></i>
                                 <i className="bx bx-x icon-close"></i>
                             </a>
                             <div id="faq6" className="collapse" data-bs-parent=".faq-list">
                             <p>
-                                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
+                            Yes, there are many provisions for financial assistance and scholarships for Chemical Engineering students at IIT Jodhpur. The institute offers various scholarships like the Institute Merit-cum-Means Scholarship, SC/ST Scholarship, and Inspire Scholarship to deserving students.
                             </p>
                             </div>
                         </li>

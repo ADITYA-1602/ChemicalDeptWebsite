@@ -1,9 +1,73 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import { message } from 'antd';
+import emailjs from '@emailjs/browser';
 import Navbar from './Navbar'
-
-export default function Contact() {
+export const Contact = () => {
+    // const [isValid, setIsValid] = useState(true);
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+        // const formFields = form.current.elements;
+        // const isEmpty = Array.from(formFields).some((field) => !field.value.trim());
+        // if (isEmpty) {
+        //     setIsValid(false);
+        //     warning();
+        //     return;
+        // }
+        // emailjs.sendForm('service_tshpbrb', 'template_i17483c', form.current, '_emESdC9xiudXx0RY')
+        //     .then((result) => {
+        //         messageApi
+        //             .open({
+        //                 type: 'success',
+        //                 content: 'Sending your message..',
+        //                 duration: 2.0,
+        //             })
+        //             .then(() => message.success('Your message has been sent. Thank you!', 2.5));
+        //         e.target.reset();
+        //     }, (warning) => {
+        //         message.warning('An error occurred, please try again later.');
+        //         warning();
+        //         e.target.reset();
+        //     });
+        emailjs.sendForm('service_tshpbrb', 'template_i17483c', form.current, '_emESdC9xiudXx0RY')
+            .then((result) => {
+                success();
+                e.target.reset();
+            }, (error) => {
+                message.error('An error occurred, please try again later.');
+                error();
+                e.target.reset();
+            });
+    };
+    const [messageApi, contextHolder] = message.useMessage();
+    const success = () => {
+        messageApi
+            .open({
+            type: 'success',
+            content: 'Sending your message..',
+            duration: 2.0,
+            })
+            .then(() => message.success('Your message has been sent. Thank you!', 2.5))
+    };
+    // const warning = () => {
+    //     messageApi
+    //         .open({
+    //         type: 'warning',
+    //         content: 'Action in progress..',
+    //         duration: 2.0,
+    //         })
+    //         .then(() => message.warning('Please fill all the required fields', 2.5))
+    // };
+    // const handleClick = () => {
+    //     if (isValid) {
+    //         success();
+    //     } else {
+    //         warning();
+    //     }
+    // };
     return (
         <>
+            {contextHolder}
             <Navbar/>
             <div className="breadcrumbs" data-aos="fade-in">
                 <div className="container">
@@ -39,13 +103,13 @@ export default function Contact() {
                             </div>
                         </div>
                         <div className="col-lg-8 mt-5 mt-lg-0 ">
-                            <form action="#" method="post" className="php-email-form">
+                            <form ref={form} onSubmit={sendEmail} className="php-email-form">
                                 <div className="row">
                                     <div className="col-md-6 form-group">
-                                        <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required/>
+                                        <input type="text" name="user_name" className="form-control" id="name" placeholder="Your Name" required/>
                                     </div>
                                     <div className="col-md-6 form-group mt-3 mt-md-0">
-                                        <input type="email" className="form-control" name="email" id="email" placeholder="Your Email" required/>
+                                        <input type="email" className="form-control" name="user_email" id="email" placeholder="Your Email" required/>
                                     </div>
                                 </div>
                                 <div className="form-group mt-3">
@@ -54,12 +118,7 @@ export default function Contact() {
                                 <div className="form-group mt-3">
                                     <textarea className="form-control" name="message" rows="5" placeholder="Message" required></textarea>
                                 </div>
-                                <div className="my-3">
-                                    <div className="loading">Loading</div>
-                                    <div className="error-message"></div>
-                                    <div className="sent-message">Your message has been sent. Thank you!</div>
-                                </div>
-                                <div className="text-center"><button type="submit">Send Message</button></div>
+                                <div className="text-center"><button type="submit" value="Send" onClick={success} >Send Message</button></div>
                             </form>
                         </div>
                     </div>
@@ -67,4 +126,5 @@ export default function Contact() {
             </section>
         </>
     )
-}
+};
+export default Contact;
