@@ -1055,14 +1055,14 @@ section {
   display: none;
 }
 .faq .faq-list a{
-  color:#7cc576;
+  color:#52a9b5;
 }
 .faq .faq-list a.collapsed {
   color: #343a40;
 }
 
 .faq .faq-list a.collapsed:hover {
-  color: #7cc576;
+  color: #52a9b5;
 }
 
 .faq .faq-list a.collapsed .icon-show {
