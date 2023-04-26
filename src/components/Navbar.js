@@ -16,7 +16,7 @@ export default function Navbar(){
                 <div className="container-fluid d-flex align-items-center justify-content-between">
                     <nav id="navbar" className="navbar">
                         <ul>
-                            <li><Link className="nav-link scrollto" aria-current="page" to="/"><span style={{ fontWeight: 'bold' }}>Home</span></Link></li>
+                            <li><Link aria-current="page" to="/"><span style={{ fontWeight: 'bold' }}>Home</span></Link></li>
                             <li className="dropdown"><Link aria-current="page" to="#"><span style={{ fontWeight: 'bold' }}>Faculty & Staff<i className="bi bi-chevron-down dropdown-indicator"></i></span></Link>
                                 <ul>
                                     <li class="dropdown"><Link aria-current="page" to="#"><span style={{ fontWeight: 'bold' }}>Faculty & Advisors</span> <i class="bi bi-chevron-down dropdown-indicator"></i></Link>
@@ -33,7 +33,7 @@ export default function Navbar(){
                                     </li>
                                 </ul>
                             </li>
-                            <li className="dropdown"><Link aria-current="page" to="#"><span style={{ fontWeight: 'bold' }}>Students<i className="bi bi-chevron-down dropdown-indicator"></i></span></Link>
+                            <li className="dropdown"><Link aria-current="page" to="#"><span style={{ fontWeight: 'bold' }}>Academics<i className="bi bi-chevron-down dropdown-indicator"></i></span></Link>
                                 <ul>
                                     <li class="dropdown"><Link aria-current="page" to="#"><span style={{ fontWeight: 'bold' }}>UnderGraduate</span> <i class="bi bi-chevron-down dropdown-indicator"></i></Link>
                                         <ul>
@@ -64,7 +64,7 @@ export default function Navbar(){
                                         <li><Link aria-current="page" to="/completedProjects">Completed Projects</Link></li>
                                         </ul>
                                     </li>
-                                    <li><a aria-current="page" href="https://iitj.irins.org/faculty/index/Department+of+Chemical+Engineering">Publications</a></li>
+                                    <li><Link aria-current="page" to="https://iitj.irins.org/faculty/index/Department+of+Chemical+Engineering" target="_blank" rel="noopener noreferrer">Publications</Link></li>
                                     <li><Link aria-current="page" to="/sponsorsColabs">Sponsors & Collaborators</Link></li>
                                 </ul>
                             </li>
@@ -72,19 +72,17 @@ export default function Navbar(){
                                 <ul>
                                     <li><Link aria-current="page" to="/webinars">Webinars</Link></li>
                                     <li><Link aria-current="page" to="/newsLetter">News & Newsletter</Link></li>
-                                    <li><Link aria-current="page" to="/awards">Awards & Recognition</Link></li>
                                 </ul>
                             </li>
                             <li className="dropdown"><Link aria-current="page" to="#"><span style={{ fontWeight: 'bold' }}>Resources<i className="bi bi-chevron-down dropdown-indicator"></i></span></Link>
                                 <ul>
                                     <li><Link aria-current="page" to="/infoComp">Info for Companies</Link></li>
                                     <li><Link aria-current="page" to="/corpBrochure">Corporate Relations</Link></li>
-                                    <li><Link aria-current="page" to="/labSafety">Laboratory Safety</Link></li>
                                     <li><Link aria-current="page" to="/donate">Donate</Link></li>
                                 </ul>
                             </li>
-                            <li><Link className="nav-link scrollto" aria-current="page" to="/contact"><span style={{ fontWeight: 'bold' }}>Contacts</span></Link></li>
-                            <li><Link className="nav-link scrollto" aria-current="page" to="/faq"><span style={{ fontWeight: 'bold' }}>FAQ</span></Link></li>
+                            <li><Link aria-current="page" to="/contact"><span style={{ fontWeight: 'bold' }}>Contact</span></Link></li>
+                            <li><Link aria-current="page" to="/faq"><span style={{ fontWeight: 'bold' }}>FAQ</span></Link></li>
                         </ul>
                         <i className="bi bi-list mobile-nav-toggle d-none"></i>
                     </nav>

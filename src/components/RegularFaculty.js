@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
+import { Link } from 'react-router-dom'
 
 export default function RegularFaculty() {
     return (
@@ -19,11 +20,11 @@ export default function RegularFaculty() {
                                 <div className="member-img">
                                     <img src={process.env.PUBLIC_URL + '/Images/Faculty/Chem_Hod.jpeg'} className="img-fluid" alt=""/>
                                     <div className="social">
-                                        <a href="mailto: pradiptewari@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></a>
-                                        <a href="https://iitj.irins.org/profile/94300"><i className="bi bi-person-fill"></i></a>
-                                        <a href="https://sites.google.com/iitj.ac.in/pradipktewari/home"><i class="fa-solid fa-house"></i></a>
-                                        <a href="tel:+91-291-2801703"><i className="bi bi-phone-fill"></i></a>
-                                        <a href="https://www.linkedin.com/in/pradip-k-tewari-497b546a/"><i className="bi bi-linkedin"></i></a>
+                                        <Link aria-current="page" to="mailto: pradiptewari@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></Link>
+                                        <Link aria-current="page" to="https://iitj.irins.org/profile/94300" target="_blank" rel="noopener noreferrer"><i className="bi bi-person-fill"></i></Link>
+                                        <Link aria-current="page" to="https://sites.google.com/iitj.ac.in/pradipktewari/home" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-house"></i></Link>
+                                        <Link aria-current="page" to="tel:+91-291-2801703"><i className="bi bi-phone-fill"></i></Link>
+                                        <Link aria-current="page" to="https://www.linkedin.com/in/pradip-k-tewari-497b546a/" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin"></i></Link>
                                     </div>
                                 </div>
                                 <div className="member-info">
@@ -39,11 +40,11 @@ export default function RegularFaculty() {
                                 <div className="member-img">
                                     <img src={process.env.PUBLIC_URL + '/Images/Faculty/abhilasham.jpg'} className="img-fluid" alt=""/>
                                     <div className="social">
-                                        <a href="mailto: abhilasham@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></a>
-                                        <a href="https://iitj.irins.org/profile/229215"><i className="bi bi-person-fill"></i></a>
-                                        <a href="https://sites.google.com/iitj.ac.in/abhilasham/home"><i class="fa-solid fa-house"></i></a>
-                                        <a href="tel:+91-291-2801713"><i className="bi bi-phone-fill"></i></a>
-                                        <a href="https://www.linkedin.com/in/dr-abhilasha-maheshwari-55406a7b/"><i className="bi bi-linkedin"></i></a>
+                                        <Link aria-current="page" to="mailto: abhilasham@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></Link>
+                                        <Link aria-current="page" to="https://iitj.irins.org/profile/229215" target="_blank" rel="noopener noreferrer"><i className="bi bi-person-fill"></i></Link>
+                                        <Link aria-current="page" to="https://sites.google.com/iitj.ac.in/abhilasham/home" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-house"></i></Link>
+                                        <Link aria-current="page" to="tel:+91-291-2801713"><i className="bi bi-phone-fill"></i></Link>
+                                        <Link aria-current="page" to="https://www.linkedin.com/in/dr-abhilasha-maheshwari-55406a7b/" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin"></i></Link>
                                     </div>
                                 </div>
                                 <div className="member-info">
@@ -59,11 +60,11 @@ export default function RegularFaculty() {
                                 <div className="member-img">
                                     <img src={process.env.PUBLIC_URL + '/Images/Faculty/Angan.jpg'} className="img-fluid" alt=""/>
                                     <div className="social">
-                                        <a href="mailto: angan@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></a>
-                                        <a href="https://iitj.irins.org/profile/158541"><i className="bi bi-person-fill"></i></a>
-                                        <a href="https://sites.google.com/iitj.ac.in/aces-laboratory/home"><i class="fa-solid fa-house"></i></a>
-                                        <a href="tel:+91-291-2801706"><i className="bi bi-phone-fill"></i></a>
-                                        <a href="https://www.linkedin.com/in/angan-sengupta-9750224a/"><i className="bi bi-linkedin"></i></a>
+                                        <Link aria-current="page" to="mailto: angan@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></Link>
+                                        <Link aria-current="page" to="https://iitj.irins.org/profile/158541" target="_blank" rel="noopener noreferrer"><i className="bi bi-person-fill"></i></Link>
+                                        <Link aria-current="page" to="https://sites.google.com/iitj.ac.in/aces-laboratory/home" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-house"></i></Link>
+                                        <Link aria-current="page" to="tel:+91-291-2801706"><i className="bi bi-phone-fill"></i></Link>
+                                        <Link aria-current="page" to="https://www.linkedin.com/in/angan-sengupta-9750224a/" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin"></i></Link>
                                     </div>
                                 </div>
                                 <div className="member-info">
@@ -79,11 +80,11 @@ export default function RegularFaculty() {
                                 <div className="member-img">
                                     <img src={process.env.PUBLIC_URL + '/Images/Faculty/deepakarora.jpg'} className="img-fluid" alt=""/>
                                     <div className="social">
-                                        <a href="mailto: deepakarora@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></a>
-                                        <a href="https://iitj.irins.org/profile/120831"><i className="bi bi-person-fill"></i></a>
-                                        <a href="https://deepakarora04.wixsite.com/website"><i class="fa-solid fa-house"></i></a>
-                                        <a href="tel:+91-291-2801705"><i className="bi bi-phone-fill"></i></a>
-                                        <a href="https://www.linkedin.com/in/deearo/"><i className="bi bi-linkedin"></i></a>
+                                        <Link aria-current="page" to="mailto: deepakarora@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></Link>
+                                        <Link aria-current="page" to="https://iitj.irins.org/profile/120831" target="_blank" rel="noopener noreferrer"><i className="bi bi-person-fill"></i></Link>
+                                        <Link aria-current="page" to="https://deepakarora04.wixsite.com/website" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-house"></i></Link>
+                                        <Link aria-current="page" to="tel:+91-291-2801705"><i className="bi bi-phone-fill"></i></Link>
+                                        <Link aria-current="page" to="https://www.linkedin.com/in/deearo/" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin"></i></Link>
                                     </div>
                                 </div>
                                 <div className="member-info">
@@ -99,11 +100,11 @@ export default function RegularFaculty() {
                                 <div className="member-img">
                                     <img src={process.env.PUBLIC_URL + '/Images/Faculty/krunal.jpeg'} className="img-fluid" alt=""/>
                                     <div className="social">
-                                        <a href="mailto: krunalg@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></a>
-                                        <a href="https://iitj.irins.org/profile/354355"><i className="bi bi-person-fill"></i></a>
-                                        <a href="https://krunalgangawane.wixsite.com/kmgangawane"><i class="fa-solid fa-house"></i></a>
-                                        <a href="tel:+91-291-2801713"><i className="bi bi-phone-fill"></i></a>
-                                        <a href="https://www.linkedin.com/in/dr-abhilasha-maheshwari-55406a7b/"><i className="bi bi-linkedin"></i></a>
+                                        <Link aria-current="page" to="mailto: krunalg@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></Link>
+                                        <Link aria-current="page" to="https://iitj.irins.org/profile/354355" target="_blank" rel="noopener noreferrer"><i className="bi bi-person-fill"></i></Link>
+                                        <Link aria-current="page" to="https://krunalgangawane.wixsite.com/kmgangawane" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-house"></i></Link>
+                                        <Link aria-current="page" to="tel:+91-291-2801713"><i className="bi bi-phone-fill"></i></Link>
+                                        <Link aria-current="page" to="https://www.linkedin.com/in/dr-abhilasha-maheshwari-55406a7b/" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin"></i></Link>
                                     </div>
                                 </div>
                                 <div className="member-info">
@@ -119,11 +120,11 @@ export default function RegularFaculty() {
                                 <div className="member-img">
                                     <img src={process.env.PUBLIC_URL + '/Images/Faculty/nirmalya.jpg'} className="img-fluid" alt=""/>
                                     <div className="social">
-                                        <a href="mailto: nirmalya@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></a>
-                                        <a href="https://iitj.irins.org/profile/196325"><i className="bi bi-person-fill"></i></a>
-                                        <a href="http://home.iitj.ac.in/~nirmalya/"><i class="fa-solid fa-house"></i></a>
-                                        <a href="tel:+91-291-2801711"><i className="bi bi-phone-fill"></i></a>
-                                        <a href="https://www.linkedin.com/in/nirmalya-bachhar-219173b/"><i className="bi bi-linkedin"></i></a>
+                                        <Link aria-current="page" to="mailto: nirmalya@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></Link>
+                                        <Link aria-current="page" to="https://iitj.irins.org/profile/196325" target="_blank" rel="noopener noreferrer"><i className="bi bi-person-fill"></i></Link>
+                                        <Link aria-current="page" to="http://home.iitj.ac.in/~nirmalya/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-house"></i></Link>
+                                        <Link aria-current="page" to="tel:+91-291-2801711"><i className="bi bi-phone-fill"></i></Link>
+                                        <Link aria-current="page" to="https://www.linkedin.com/in/nirmalya-bachhar-219173b/" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin"></i></Link>
                                     </div>
                                 </div>
                                 <div className="member-info">
@@ -139,11 +140,11 @@ export default function RegularFaculty() {
                                 <div className="member-img">
                                     <img src={process.env.PUBLIC_URL + '/Images/Faculty/psarkar.png'} className="img-fluid" alt=""/>
                                     <div className="social">
-                                        <a href="mailto: psarkar@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></a>
-                                        <a href="https://iitj.irins.org/profile/170899"><i className="bi bi-person-fill"></i></a>
-                                        <a href="https://sites.google.com/iitj.ac.in/biomolecular-engineering-group/home"><i class="fa-solid fa-house"></i></a>
-                                        <a href="tel:+91-291-2801707"><i className="bi bi-phone-fill"></i></a>
-                                        <a href=""><i className="bi bi-linkedin"></i></a>
+                                        <Link aria-current="page" to="mailto: psarkar@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></Link>
+                                        <Link aria-current="page" to="https://iitj.irins.org/profile/170899" target="_blank" rel="noopener noreferrer"><i className="bi bi-person-fill"></i></Link>
+                                        <Link aria-current="page" to="https://sites.google.com/iitj.ac.in/biomolecular-engineering-group/home" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-house"></i></Link>
+                                        <Link aria-current="page" to="tel:+91-291-2801707"><i className="bi bi-phone-fill"></i></Link>
+                                        {/* <Link aria-current="page" to=""><i className="bi bi-linkedin"></i></Link> */}
                                     </div>
                                 </div>
                                 <div className="member-info">
@@ -159,11 +160,11 @@ export default function RegularFaculty() {
                                 <div className="member-img">
                                     <img src={process.env.PUBLIC_URL + '/Images/Faculty/guptapk.jpg'} className="img-fluid" alt=""/>
                                     <div className="social">
-                                        <a href="mailto: guptapk@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></a>
-                                        <a href="https://iitj.irins.org/profile/196171"><i className="bi bi-person-fill"></i></a>
-                                        <a href="http://home.iitj.ac.in/~guptapk/"><i class="fa-solid fa-house"></i></a>
-                                        <a href="tel:+91-291-2801709"><i className="bi bi-phone-fill"></i></a>
-                                        <a href="https://www.linkedin.com/in/prashant-kumar-gupta-0827b416/"><i className="bi bi-linkedin"></i></a>
+                                        <Link aria-current="page" to="mailto: guptapk@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></Link>
+                                        <Link aria-current="page" to="https://iitj.irins.org/profile/196171" target="_blank" rel="noopener noreferrer"><i className="bi bi-person-fill"></i></Link>
+                                        <Link aria-current="page" to="http://home.iitj.ac.in/~guptapk/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-house"></i></Link>
+                                        <Link aria-current="page" to="tel:+91-291-2801709"><i className="bi bi-phone-fill"></i></Link>
+                                        <Link aria-current="page" to="https://www.linkedin.com/in/prashant-kumar-gupta-0827b416/" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin"></i></Link>
                                     </div>
                                 </div>
                                 <div className="member-info">
@@ -179,11 +180,11 @@ export default function RegularFaculty() {
                                 <div className="member-img">
                                     <img src={process.env.PUBLIC_URL + '/Images/Faculty/praveenks.jpg'} className="img-fluid" alt=""/>
                                     <div className="social">
-                                        <a href="mailto: praveenks@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></a>
-                                        <a href="https://iitj.irins.org/profile/196313"><i className="bi bi-person-fill"></i></a>
-                                        <a href="http://home.iitj.ac.in/~praveenks/"><i class="fa-solid fa-house"></i></a>
-                                        <a href="tel:+91-291-2801712"><i className="bi bi-phone-fill"></i></a>
-                                        <a href="https://www.linkedin.com/in/praveen-kumar-sappidi-4a60151b/"><i className="bi bi-linkedin"></i></a>
+                                        <Link aria-current="page" to="mailto: praveenks@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></Link>
+                                        <Link aria-current="page" to="https://iitj.irins.org/profile/196313" target="_blank" rel="noopener noreferrer"><i className="bi bi-person-fill"></i></Link>
+                                        <Link aria-current="page" to="http://home.iitj.ac.in/~praveenks/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-house"></i></Link>
+                                        <Link aria-current="page" to="tel:+91-291-2801712"><i className="bi bi-phone-fill"></i></Link>
+                                        <Link aria-current="page" to="https://www.linkedin.com/in/praveen-kumar-sappidi-4a60151b/" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin"></i></Link>
                                     </div>
                                 </div>
                                 <div className="member-info">
@@ -199,11 +200,11 @@ export default function RegularFaculty() {
                                 <div className="member-img">
                                     <img src={process.env.PUBLIC_URL + '/Images/Faculty/rasapu.jpg'} className="img-fluid" alt=""/>
                                     <div className="social">
-                                        <a href="mailto: rasapu@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></a>
-                                        <a href="https://iitj.irins.org/profile/167042"><i className="bi bi-person-fill"></i></a>
-                                        <a href="https://sites.google.com/iitj.ac.in/photocaterresearchgroup/home"><i class="fa-solid fa-house"></i></a>
-                                        <a href="tel:+91-291-2801708"><i className="bi bi-phone-fill"></i></a>
-                                        <a href="https://www.linkedin.com/in/ramesh-asapu/"><i className="bi bi-linkedin"></i></a>
+                                        <Link aria-current="page" to="mailto: rasapu@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></Link>
+                                        <Link aria-current="page" to="https://iitj.irins.org/profile/167042" target="_blank" rel="noopener noreferrer"><i className="bi bi-person-fill"></i></Link>
+                                        <Link aria-current="page" to="https://sites.google.com/iitj.ac.in/photocaterresearchgroup/home" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-house"></i></Link>
+                                        <Link aria-current="page" to="tel:+91-291-2801708"><i className="bi bi-phone-fill"></i></Link>
+                                        <Link aria-current="page" to="https://www.linkedin.com/in/ramesh-asapu/" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin"></i></Link>
                                     </div>
                                 </div>
                                 <div className="member-info">
@@ -219,11 +220,11 @@ export default function RegularFaculty() {
                                 <div className="member-img">
                                     <img src={process.env.PUBLIC_URL + '/Images/Faculty/sumitkamal.jpg'} className="img-fluid" alt=""/>
                                     <div className="social">
-                                        <a href="mailto: sumitkamal@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></a>
-                                        <a href="https://iitj.irins.org/profile/259027"><i className="bi bi-person-fill"></i></a>
-                                        <a href="https://sites.google.com/iitj.ac.in/sumitkamal-green-lab/home"><i class="fa-solid fa-house"></i></a>
-                                        <a href="tel:+91-291-2801715"><i className="bi bi-phone-fill"></i></a>
-                                        <a href="https://www.linkedin.com/in/sumit-kamal-868b37170/"><i className="bi bi-linkedin"></i></a>
+                                        <Link aria-current="page" to="mailto: sumitkamal@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></Link>
+                                        <Link aria-current="page" to="https://iitj.irins.org/profile/259027" target="_blank" rel="noopener noreferrer"><i className="bi bi-person-fill"></i></Link>
+                                        <Link aria-current="page" to="https://sites.google.com/iitj.ac.in/sumitkamal-green-lab/home" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-house"></i></Link>
+                                        <Link aria-current="page" to="tel:+91-291-2801715"><i className="bi bi-phone-fill"></i></Link>
+                                        <Link aria-current="page" to="https://www.linkedin.com/in/sumit-kamal-868b37170/" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin"></i></Link>
                                     </div>
                                 </div>
                                 <div className="member-info">
@@ -239,11 +240,11 @@ export default function RegularFaculty() {
                                 <div className="member-img">
                                     <img src={process.env.PUBLIC_URL + '/Images/Faculty/tara.jpeg'} className="img-fluid" alt=""/>
                                     <div className="social">
-                                        <a href="mailto: tckumawat@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></a>
-                                        <a href="https://iitj.irins.org/profile/259025"><i className="bi bi-person-fill"></i></a>
-                                        <a href="http://home.iitj.ac.in/~tckumawat"><i class="fa-solid fa-house"></i></a>
-                                        <a href=""><i className="bi bi-phone-fill"></i></a>
-                                        <a href="https://www.linkedin.com/in/tara-chand-kumawat-87b3185b/"><i className="bi bi-linkedin"></i></a>
+                                        <Link aria-current="page" to="mailto: tckumawat@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></Link>
+                                        <Link aria-current="page" to="https://iitj.irins.org/profile/259025" target="_blank" rel="noopener noreferrer"><i className="bi bi-person-fill"></i></Link>
+                                        <Link aria-current="page" to="http://home.iitj.ac.in/~tckumawat" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-house"></i></Link>
+                                        {/* <Link aria-current="page" to=""><i className="bi bi-phone-fill"></i></Link> */}
+                                        <Link aria-current="page" to="https://www.linkedin.com/in/tara-chand-kumawat-87b3185b/" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin"></i></Link>
                                     </div>
                                 </div>
                                 <div className="member-info">
@@ -259,11 +260,11 @@ export default function RegularFaculty() {
                                 <div className="member-img">
                                     <img src={process.env.PUBLIC_URL + '/Images/Faculty/vikky.jpg'} className="img-fluid" alt=""/>
                                     <div className="social">
-                                        <a href="mailto: vikky@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></a>
-                                        <a href="https://iitj.irins.org/profile/196164"><i className="bi bi-person-fill"></i></a>
-                                        <a href="https://anandvikky90.wixsite.com/vikky/about"><i class="fa-solid fa-house"></i></a>
-                                        <a href="tel:+91-291-2801710"><i className="bi bi-phone-fill"></i></a>
-                                        <a href="https://www.linkedin.com/in/vikky-anand-9018a05a/"><i className="bi bi-linkedin"></i></a>
+                                        <Link aria-current="page" to="mailto: vikky@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></Link>
+                                        <Link aria-current="page" to="https://iitj.irins.org/profile/196164" target="_blank" rel="noopener noreferrer"><i className="bi bi-person-fill"></i></Link>
+                                        <Link aria-current="page" to="https://anandvikky90.wixsite.com/vikky/about" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-house"></i></Link>
+                                        <Link aria-current="page" to="tel:+91-291-2801710"><i className="bi bi-phone-fill"></i></Link>
+                                        <Link aria-current="page" to="https://www.linkedin.com/in/vikky-anand-9018a05a/" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin"></i></Link>
                                     </div>
                                 </div>
                                 <div className="member-info">

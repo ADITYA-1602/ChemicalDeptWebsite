@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
+import { Link } from 'react-router-dom'
 
 export default function DocAcads() {
     return (
@@ -28,9 +29,9 @@ export default function DocAcads() {
             </div>
             <br></br>
             <div className='container'>
-                <ul><a href='https://iitj.ac.in/uploaded_docs/dept_upload/cml/PG_Curriculum_document-2020-10-29-12-29-pm.pdf'><span class='bi bi-file-pdf-fill'>  Detailed Curriculum for M.Tech.-Ph.D. Dual Degree Chemical Engineering</span></a></ul>
-                <ul><a href='https://iitj.ac.in/uploaded_docs/dept_upload/cml/PhD_Comprehensive_document-2021-08-25-1-03-am.pdf'><span class='bi bi-file-pdf-fill'> Course Content for PhD Comprehensive Examination</span></a></ul>
-                <ul><a href='https://iitj.ac.in/uploaded_docs/Regulation/Academic_Regulations_Final_03_09_2019.pdf'><span class='bi bi-file-pdf-fill'> Academic Regulations for Doctoral Programs</span></a></ul>
+                <ul><Link aria-current="page" to='https://iitj.ac.in/uploaded_docs/dept_upload/cml/PG_Curriculum_document-2020-10-29-12-29-pm.pdf' target="_blank" rel="noopener noreferrer"><span class='bi bi-file-pdf-fill'>  Detailed Curriculum for M.Tech.-Ph.D. Dual Degree Chemical Engineering</span></Link></ul>
+                <ul><Link aria-current="page" to='https://iitj.ac.in/uploaded_docs/dept_upload/cml/PhD_Comprehensive_document-2021-08-25-1-03-am.pdf' target="_blank" rel="noopener noreferrer"><span class='bi bi-file-pdf-fill'> Course Content for PhD Comprehensive Examination</span></Link></ul>
+                <ul><Link aria-current="page" to='https://iitj.ac.in/uploaded_docs/Regulation/Academic_Regulations_Final_03_09_2019.pdf' target="_blank" rel="noopener noreferrer"><span class='bi bi-file-pdf-fill'> Academic Regulations for Doctoral Programs</span></Link></ul>
             </div>
             <br></br><br></br>
         </>

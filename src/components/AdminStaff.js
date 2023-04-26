@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
+import { Link } from 'react-router-dom'
 
 export default function AdminStaff() {
     return (
@@ -20,7 +21,7 @@ export default function AdminStaff() {
                                     <div className="social">
                                         <a href="mailto: dheerajsingh@iitj.ac.in"><i className="bi bi-envelope-at-fill"></i></a>
                                         <a href="tel:+91-291-2801702 "><i className="bi bi-phone"></i></a>
-                                        <a href="https://www.linkedin.com/in/dheeraj-singh-khangarot-1aa6401a8/"><i className="bi bi-linkedin"></i></a>
+                                        <Link aria-current="page" to="https://www.linkedin.com/in/dheeraj-singh-khangarot-1aa6401a8/" target="_blank" rel="noopener noreferrer"><i className="bi bi-linkedin"></i></Link>
                                     </div>
                                 </div>
                                 <div className="member-info">

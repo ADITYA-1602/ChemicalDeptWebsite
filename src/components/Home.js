@@ -109,6 +109,41 @@ export default function Home() {
                     />
                 </Carousel.Item>
             </Carousel>
+            <section id="onfocus" className="onfocus">
+                <div className="container-fluid p-0" data-aos="fade-up">
+                    <div className="row g-0">
+                        <div className="col-lg-6" style={{background:'var(--color-secondary)'}}>
+                            <div className="content d-flex flex-column justify-content-center h-100">
+                                <h3>SEMINARS AND MEETINGS</h3>
+                                <br></br>
+                                <ul>
+                                    <li><Link aria-current="page" to="/chaitanya-talk"><i className="bi bi-check-circle-fill"></i>Chemical Engineering Department Seminar Series - Expert talk by Mr. Gottimukkala Chaitanya</Link></li>
+                                    <li><Link aria-current="page" to="/mandalSandeep-talk"><i className="bi bi-check-circle-fill"></i>Chemical Engineering Department Seminar Series - Expert talk by Prof. D. Mandal and Dr. Sandeep K.C.</Link></li>
+                                    <li><Link aria-current="page" to="/aakash-talk"><i className="bi bi-check-circle-fill"></i>Chemical Engineering Department Seminar Series - Expert Talk by Dr. Aakash Sharma</Link></li>
+                                    <li><Link aria-current="page" to="/manisha-talk"><i className="bi bi-check-circle-fill"></i>Chemical Engineering Department Seminar Series - Expert Talk by Dr. Manisha Padwal</Link></li>
+                                    {/* <li><Link aria-current="page" to="/manisha-talk"><i className="bi bi-check-circle-fill"></i>Chemical Engineering Department Seminar Series - Expert Talk by Dr. Manisha Padwal</Link></li> */}
+                                </ul>
+                                <Link aria-current="page" to="/webinars" className="read-more align-self-start"><span>Read More</span><i className="bi bi-arrow-right"></i></Link>
+                            </div>
+                        </div>
+                        <div className="col-lg-6" style={{background:'var(--color-white)'}}>
+                            <div className="content d-flex flex-column justify-content-center h-100">
+                                <h3 style={{color:'var(--color-secondary)'}}>NOTICE BOARD</h3>
+                                <br></br>
+                                <ul>
+                                    <li><Link aria-current="page" to="https://twitter.com/ChemEngg_IITJ/status/1640662570922295296?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1640662570922295296%7Ctwgr%5Ec3b68ecf16beb1a1edf4d84c7ed50409e50bcfba%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fiitj.ac.in%2Fdepartment%2Findex.php%3Fid%3Dresearch_highlights_and_initiativesnum%3D1045dept%3Dchemical" style={{color:'var(--color-secondary)'}} target="_blank" rel="noopener noreferrer"><i className="bi bi-check-circle-fill"></i>Congratulations to Dr. Nirmalya Bachhar for being awarded the MSRI prize</Link></li>
+                                    <li><Link aria-current="page" to="https://iitj.ac.in/uploaded_docs/Rolling%20Advt.%20Ph.D.%202023_13032023.pdf" style={{color:'var(--color-secondary)'}} target="_blank" rel="noopener noreferrer"><i className="bi bi-check-circle-fill"></i>Rolling advertisement for Admission to Ph.D. Programmes</Link></li>
+                                    <li><Link aria-current="page" to="https://iitj.ac.in/uploaded_docs/Advertisment_Mtech_Mtech%20phd_revised_12032023.pdf" style={{color:'var(--color-secondary)'}} target="_blank" rel="noopener noreferrer"><i className="bi bi-check-circle-fill"></i>Admission to M.Tech. and M.Tech.-Ph.D Dual Degree Programmes, AY 2023-24</Link></li>
+                                    <li><Link aria-current="page" to="https://online.fliphtml5.com/tkrsq/hptp/" style={{color:'var(--color-secondary)'}} target="_blank" rel="noopener noreferrer"><i className="bi bi-check-circle-fill"></i>Departmental Newsletter - Vol. 2, No. 2, 2022</Link></li>
+                                    <li><Link aria-current="page" to="https://iitj.ac.in/uploaded_docs/dept_upload/cml/PhD_Jan23_Meritlist_document-2022-11-25-17-54-pm.pdf" style={{color:'var(--color-secondary)'}} target="_blank" rel="noopener noreferrer"><i className="bi bi-check-circle-fill"></i>PhD Admissions AY 22-23 Sem II (Jan 2023): Results</Link></li>
+                                    <li><Link aria-current="page" to="https://iitj.ac.in/uploaded_docs/dept_upload/cml/PhD_Jan23_ShortList_document-2022-11-04-16-52-pm.pdf" style={{color:'var(--color-secondary)'}} target="_blank" rel="noopener noreferrer"><i className="bi bi-check-circle-fill"></i>PhD Admissions AY 22-23 Sem II (Jan 2023): Shortlisted Candidates for Interview</Link></li>
+                                </ul>
+                                <Link aria-current="page" to="/newsletter" className="read-more align-self-start"><span>Read More</span><i className="bi bi-arrow-right"></i></Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             {/* Message From HOD Section */}
             <section id="advanced-features">
                 <div className="features-row section-bg" data-aos="fade-up">
@@ -133,11 +168,11 @@ export default function Home() {
                 <div className="container">
                     <div className="row counters" data-aos="fade-up" data-aos-delay="100">
                         <div className="col-lg-3 col-6 text-center">
-                            <span data-purecounter-start="0" data-purecounter-end="100" data-purecounter-duration="1" className="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" className="purecounter"></span>
                             <p>PG Students</p>
                         </div>
                         <div className="col-lg-3 col-6 text-center">
-                            <span data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="1" className="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="109" data-purecounter-duration="1" className="purecounter"></span>
                             <p>UG Students</p>
                         </div>
                         <div className="col-lg-3 col-6 text-center">
@@ -145,7 +180,7 @@ export default function Home() {
                             <p>Faculty Members</p>
                         </div>
                         <div className="col-lg-3 col-6 text-center">
-                            <span data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1" className="purecounter"></span>
+                            <span data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" className="purecounter"></span>
                             <p>Staff Members</p>
                         </div>
                         <div className="col-lg-3 col-6 text-center">
@@ -154,44 +189,7 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-            <br></br><br></br>
             {/* <!-- End COUNTER Section --> */}
-            <section id="onfocus" className="onfocus">
-                <div className="container-fluid p-0" data-aos="fade-up">
-                    <div className="row g-0">
-                        <div className="col-lg-6" style={{background:'var(--color-secondary)'}}>
-                            <div className="content d-flex flex-column justify-content-center h-100">
-                                <h3>SEMINARS AND MEETINGS</h3>
-                                <br></br>
-                                <ul>
-                                    <li><Link aria-current="page" to="/chaitanya-talk"><i className="bi bi-check-circle-fill"></i>Chemical Engineering Department Seminar Series - Expert talk by Mr. Gottimukkala Chaitanya</Link></li>
-                                    <li><Link aria-current="page" to="/mandalSandeep-talk"><i className="bi bi-check-circle-fill"></i>Chemical Engineering Department Seminar Series - Expert talk by Prof. D. Mandal and Dr. Sandeep K.C.</Link></li>
-                                    <li><Link aria-current="page" to="/aakash-talk"><i className="bi bi-check-circle-fill"></i>Chemical Engineering Department Seminar Series - Talk by Dr. Aakash Sharma</Link></li>
-                                    <li><Link aria-current="page" to="/manisha-talk"><i className="bi bi-check-circle-fill"></i>Chemical Engineering Department Seminar Series - Talk by Dr. Manisha Padwal</Link></li>
-                                    
-                                </ul>
-                                <Link aria-current="page" to="/webinars" className="read-more align-self-start"><span>Read More</span><i className="bi bi-arrow-right"></i></Link>
-                            </div>
-                        </div>
-                        <div className="col-lg-6" style={{background:'var(--color-white)'}}>
-                            <div className="content d-flex flex-column justify-content-center h-100">
-                                <h3 style={{color:'var(--color-secondary)'}}>NOTICE BOARD</h3>
-                                <br></br>
-                                <ul>
-                                    <li><Link aria-current="page" to="https://twitter.com/ChemEngg_IITJ/status/1640662570922295296?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1640662570922295296%7Ctwgr%5Ec3b68ecf16beb1a1edf4d84c7ed50409e50bcfba%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fiitj.ac.in%2Fdepartment%2Findex.php%3Fid%3Dresearch_highlights_and_initiativesnum%3D1045dept%3Dchemical" style={{color:'var(--color-secondary)'}}><i className="bi bi-check-circle-fill"></i>Congratulations to Dr. Nirmalya Bachhar for being awarded the MSRI prize</Link></li>
-                                    <li><Link aria-current="page" to="https://iitj.ac.in/uploaded_docs/Rolling%20Advt.%20Ph.D.%202023_13032023.pdf" style={{color:'var(--color-secondary)'}}><i className="bi bi-check-circle-fill"></i>Rolling advertisement for Admission to Ph.D. Programmes</Link></li>
-                                    <li><Link aria-current="page" to="https://iitj.ac.in/uploaded_docs/Advertisment_Mtech_Mtech%20phd_revised_12032023.pdf" style={{color:'var(--color-secondary)'}}><i className="bi bi-check-circle-fill"></i>Admission to M.Tech. and M.Tech.-Ph.D Dual Degree Programmes, AY 2023-24</Link></li>
-                                    <li><Link aria-current="page" to="https://online.fliphtml5.com/tkrsq/hptp/" style={{color:'var(--color-secondary)'}}><i className="bi bi-check-circle-fill"></i>Departmental Newsletter - Vol. 2, No. 2, 2022</Link></li>
-                                    <li><Link aria-current="page" to="https://iitj.ac.in/uploaded_docs/dept_upload/cml/PhD_Jan23_Meritlist_document-2022-11-25-17-54-pm.pdf" style={{color:'var(--color-secondary)'}}><i className="bi bi-check-circle-fill"></i>PhD Admissions AY 22-23 Sem II (Jan 2023): Results</Link></li>
-                                    <li><Link aria-current="page" to="https://iitj.ac.in/uploaded_docs/dept_upload/cml/PhD_Jan23_ShortList_document-2022-11-04-16-52-pm.pdf" style={{color:'var(--color-secondary)'}}><i className="bi bi-check-circle-fill"></i>PhD Admissions AY 22-23 Sem II (Jan 2023): Shortlisted Candidates for Interview</Link></li>
-                                </ul>
-                                <Link aria-current="page" to="/newsletter" className="read-more align-self-start"><span>Read More</span><i className="bi bi-arrow-right"></i></Link>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {/* <!-- End On Focus Section --> */}
             {/* <!-- ======= Research Section ======= --> */}
             <section id="services" className="services">
                 <div className="container" data-aos="fade-up">

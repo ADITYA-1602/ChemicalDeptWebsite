@@ -1,43 +1,30 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
+import { Link } from 'react-router-dom'
 import { message } from 'antd';
 import emailjs from '@emailjs/browser';
 import Navbar from './Navbar'
+
 export const Contact = () => {
-    // const [isValid, setIsValid] = useState(true);
+    const [isValid, setIsValid] = useState(false);
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
-        // const formFields = form.current.elements;
-        // const isEmpty = Array.from(formFields).some((field) => !field.value.trim());
-        // if (isEmpty) {
-        //     setIsValid(false);
-        //     warning();
-        //     return;
-        // }
-        // emailjs.sendForm('service_tshpbrb', 'template_i17483c', form.current, '_emESdC9xiudXx0RY')
-        //     .then((result) => {
-        //         messageApi
-        //             .open({
-        //                 type: 'success',
-        //                 content: 'Sending your message..',
-        //                 duration: 2.0,
-        //             })
-        //             .then(() => message.success('Your message has been sent. Thank you!', 2.5));
-        //         e.target.reset();
-        //     }, (warning) => {
-        //         message.warning('An error occurred, please try again later.');
-        //         warning();
-        //         e.target.reset();
-        //     });
+        const formFields = form.current.elements;
+        const isEmpty = Array.from(formFields).some((field) => !field.value.trim());
+        if (isEmpty) {
+            setIsValid(false);
+            warning();
+            return;
+        }
         emailjs.sendForm('service_tshpbrb', 'template_i17483c', form.current, '_emESdC9xiudXx0RY')
             .then((result) => {
                 success();
                 e.target.reset();
-            }, (error) => {
-                message.error('An error occurred, please try again later.');
-                error();
+            }, (warning) => {
+                warning();
                 e.target.reset();
             });
+        
     };
     const [messageApi, contextHolder] = message.useMessage();
     const success = () => {
@@ -47,24 +34,24 @@ export const Contact = () => {
             content: 'Sending your message..',
             duration: 2.0,
             })
-            .then(() => message.success('Your message has been sent. Thank you!', 2.5))
+            .then(() => message.success('Your message has been sent. Thank you!', 2.7))
     };
-    // const warning = () => {
-    //     messageApi
-    //         .open({
-    //         type: 'warning',
-    //         content: 'Action in progress..',
-    //         duration: 2.0,
-    //         })
-    //         .then(() => message.warning('Please fill all the required fields', 2.5))
-    // };
-    // const handleClick = () => {
-    //     if (isValid) {
-    //         success();
-    //     } else {
-    //         warning();
-    //     }
-    // };
+    const warning = () => {
+        messageApi
+            .open({
+            type: 'warning',
+            content: 'Action in progress..',
+            duration: 2.0,
+            })
+            .then(() => message.warning('Please fill all the required fields', 2.5))
+    };
+    const handleClick = () => {
+        if (isValid) {
+            success();
+        } else {
+            warning();
+        }
+    };
     return (
         <>
             {contextHolder}
@@ -83,7 +70,7 @@ export const Contact = () => {
                         <div className="col-lg-4">
                             <div className="info">
                                 <div className="address">
-                                <a href="https://www.google.com/maps/dir//Department+of+Chemical+Engineering,+IIT+JODHPUR+F4H8%2BQPJ+Jheepasani,+Rajasthan+342027/@26.479463,73.1167625,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3941eb6948155ff7:0xa9e0e0bb6d7a1c5d!2m2!1d73.1167625!2d26.479463"><i className="bi bi-geo-alt"></i></a>
+                                <Link aria-current="page" to="https://www.google.com/maps/dir//Department+of+Chemical+Engineering,+IIT+JODHPUR+F4H8%2BQPJ+Jheepasani,+Rajasthan+342027/@26.479463,73.1167625,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x3941eb6948155ff7:0xa9e0e0bb6d7a1c5d!2m2!1d73.1167625!2d26.479463" target="_blank" rel="noopener noreferrer"><i className="bi bi-geo-alt"></i></Link>
                                     <h4>Location:</h4>
                                     <p>Department of Chemical Engineering </p>
                                     <p>Anantharman Building</p>
@@ -91,12 +78,12 @@ export const Contact = () => {
                                     <p>NH-62, Nagaur Road, Karwar, Jodhpur District</p>
                                 </div>
                                 <div className="email">
-                                    <a href="mailto: office_che@iitj.ac.inn"><i className="bi bi-envelope"></i></a>
+                                    <Link aria-current="page" to="mailto: office_che@iitj.ac.inn" target="_blank" rel="noopener noreferrer"><i className="bi bi-envelope"></i></Link>
                                     <h4>Email:</h4>
                                     <p>office_che@iitj.ac.in</p>
                                 </div>
                                 <div className="phone">
-                                    <a href="tel:+91-291-2801702"><i className="bi bi-phone"></i></a>
+                                    <Link aria-current="page" to="tel:+91-291-2801702"><i className="bi bi-phone"></i></Link>
                                     <h4>Call:</h4>
                                     <p>+91-291-2801702</p>
                                 </div>
@@ -118,7 +105,7 @@ export const Contact = () => {
                                 <div className="form-group mt-3">
                                     <textarea className="form-control" name="message" rows="5" placeholder="Message" required></textarea>
                                 </div>
-                                <div className="text-center"><button type="submit" value="Send" onClick={success} >Send Message</button></div>
+                                <div className="text-center"><button type="submit" value="Send" onClick={handleClick}>Send Message</button></div>
                             </form>
                         </div>
                     </div>

@@ -39,7 +39,7 @@ export default function Webinar() {
                         <div className="col-lg-4 col-md-6 d-flex align-items-stretch">
                             <div className="member">
                                 <div className="member-info">
-                                    <a href="Aakash_talk.js"><h4>Correlating the properties and structure of semicrystalline polymers: Case of regenerated cellulose fibers</h4></a>
+                                    <Link aria-current="page" to="/aakash-talk" ><h4>Correlating the properties and structure of semicrystalline polymers: Case of regenerated cellulose fibers</h4></Link>
                                     <h6 style={{fontWeight:'bold',color:'black'}}>Speaker: Dr. Aakash Sharma</h6>
                                     <p><i className="fa-solid fa-calendar-days"></i> June 30, 2022</p>
                                     <p style={{textAlign:'justify'}}>Abstract: Semicrystalline polymers have complex microstructures ordered across length scales. Spinning these polymers into fibres from melt or solution adds molecular orientation. Microstructure controls polymer properties...</p><hr></hr>
